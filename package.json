@@ -1,5 +1,5 @@
 {
-  "name": "superlogin-client",
+  "name": "@doodle3d/superlogin-client",
   "version": "0.6.1",
   "description": "Javascript bindings for the SuperLogin project",
   "scripts": {
