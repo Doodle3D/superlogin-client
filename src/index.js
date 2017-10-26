@@ -332,7 +332,7 @@ class Superlogin extends EventEmitter2 {
 
 	login(credentials) {
 		const { usernameField, passwordField } = this._config.local;
-		if (!credentials[usernameField] || !credentials[passwordField]) {
+		if (typeof credentials[usernameField] !== 'string' || typeof credentials[passwordField] !== 'string') {
 			return Promise.reject({ error: 'Username or Password missing...' });
 		}
 		return this._http.post(`${this._config.baseUrl}/login`, credentials, { skipRefresh: true })
