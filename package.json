@@ -1,6 +1,6 @@
 {
-  "name": "superlogin-client",
-  "version": "0.8.0",
+  "name": "@doodle3d/superlogin-client",
+  "version": "0.8.1",
   "description": "Javascript bindings for the SuperLogin project",
   "scripts": {
     "lint": "eslint --ext .js src",
